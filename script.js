@@ -1,7 +1,7 @@
 let images = [
     {
         id: 1,
-        url: 'https://cdn.discordapp.com/attachments/1389973904155480185/1389973929275428964/WhatsApp_Image_2025-06-02_at_19.54.28_f0dd7e5c.jpg?ex=68669199&is=68654019&hm=8f0c156a62d986c4d9c494212f8cb57656e54d46f1ea93b096559a15c4b040f9&',
+        url: 'https://raw.githubusercontent.com/life2harsh/data/refs/heads/main/titan.png?token=GHSAT0AAAAAAC6DVS3YKVKHXDL42PCLNB6S2HVLDPQ',
         tag: '128',
         description: ''
     },{
