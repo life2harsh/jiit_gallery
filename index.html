@@ -12,24 +12,17 @@
     <div class="container">
         <div class="header">
             <h1>JIIT Campus Gallery</h1>
-            <p></p>
         </div>
         <div class="sort-controls">
-            <span class="sort-label">Sort by:</span>
+            <span class="sort-label">Filter:</span>
             <div class="sort-buttons">
                 <button class="sort-button active" onclick="sortByTag('all', this)">All</button>
-                <button class="sort-button" onclick="sortByTag('Cafeteria', this)">Cafeteria</button>
-                <button class="sort-button" onclick="sortByTag('Library(LRC)', this)">Library</button>
-                <button class="sort-button" onclick="sortByTag('Classrooms', this)">Classrooms</button>
-                <button class="sort-button" onclick="sortByTag('Campus Aesthetics', this)">Campus</button>
-                <button class="sort-button" onclick="sortByTag('Mess', this)">Mess</button>
-                <button class="sort-button" onclick="sortByTag('Counselling', this)">Counselling</button>
-                <button class="sort-button" onclick="sortByTag('128', this)">Sector 128 Campus</button>
             </div>
         </div>
         <div class="gallery" id="gallery">
             <div class="no-images">
-                <p>No images yet. Add your first Discord CDN image above!</p>
+                <div class="loading-spinner" style="display: block;"></div>
+                <p>Loading images from ImageKit...</p>
             </div>
         </div>
     </div>
@@ -43,9 +36,8 @@
             <div class="loading-spinner" id="loadingSpinner"></div>
             <img id="modalImg" src="" alt="" style="display: none;" onload="hideSpinner()" onerror="showError()">
         </div>
-        <div class="modal-info" id="modalInfo">
+        <div class="modal-info" id="modalInfo" style="display: none;">
             <div class="modal-tag" id="modalTag"></div>
-            <div class="modal-description" id="modalDescription"></div>
         </div>
     </div>
 
